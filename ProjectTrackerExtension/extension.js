@@ -43,7 +43,6 @@ function activate(context) {
 	/* achei melhor deixar assim porque você pode abrir um arquivo que é de fora do projeto
 	sem interferir no estado do objeto. */
 	vscode.workspace.onDidOpenTextDocument(() => {
-		console.log("trying to open file");
 		if (wsinfo === undefined) {
 			getWorkspaceInfo();
 		} 
